@@ -1,0 +1,23 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+sudo: true
+dist: trusty
+os:
+  - linux
+  # - osx
+julia:
+  - 0.6
+notifications:
+  email: false
+branches:
+  only: master
+before_install:
+  - sudo apt-get install gcc gfortran -y
+  - export PYTHON=""
+  - julia -e 'Pkg.add("Conda"); using Conda; Conda.add("numpy")'
+  - julia -e 'Pkg.add("RigidBodyTreeInspector"); Pkg.checkout("RigidBodyTreeInspector")'
+
+# uncomment the following lines to override the default test script
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'Pkg.clone(pwd()); Pkg.build("AgileRoboticsTutorial"); Pkg.test("AgileRoboticsTutorial"; coverage=true)'
