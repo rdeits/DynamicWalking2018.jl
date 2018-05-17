@@ -14,7 +14,7 @@ notifications:
 branches:
   only: master
 before_install:
-  - sudo apt-get install gcc gfortran -y
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install gcc gfortran -y ; fi
   - export PYTHON=""
   - julia -e 'Pkg.add("Conda"); using Conda; Conda.add("numpy")'
 
