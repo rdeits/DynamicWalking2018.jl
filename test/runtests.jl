@@ -3,6 +3,11 @@ using Base.Test
 
 const module_tempdir = joinpath(Base.tempdir(), string(module_name(DynamicWalking2018)))
 
+using Conda
+if is_windows()
+    Conda.add("nbconvert") # jupyter doesn't seem to come with nbconvert on windows?
+end
+
 @testset "example notebooks" begin
     using IJulia
 
