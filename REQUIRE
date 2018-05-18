@@ -4,8 +4,10 @@ BenchmarkTools 0.1
 Colors 0.8.2
 Conda 0.7.1
 IJulia 1.6.1
+Ipopt
 MeshCatMechanisms
 Plots
 PyCall 1.16
 RigidBodyDynamics 0.6.1
 StaticArrays
+SymPy
