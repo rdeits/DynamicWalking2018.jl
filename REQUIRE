@@ -1,7 +1,11 @@
 julia 0.6 0.7
-IJulia 1.6.1
-RigidBodyDynamics 0.6.1
+
 BenchmarkTools 0.1
 Colors 0.8.2
-PyCall 1.16
 Conda 0.7.1
+IJulia 1.6.1
+MeshCatMechanisms
+Plots
+PyCall 1.16
+RigidBodyDynamics 0.6.1
+StaticArrays
