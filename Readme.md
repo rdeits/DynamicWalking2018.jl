@@ -32,7 +32,7 @@ In Julia, do:
 Pkg.clone("https://github.com/rdeits/DynamicWalking2018.jl")
 ```
 
-Note that this will take a few minutes. We're demonstrating a lot of different Julia packages here, so this tutorial has a lot of dependencies. These dependencies will all be downloaded for you automatically.
+Note that this will take a few minutes. We're demonstrating a lot of different Julia packages here, so this tutorial has a lot of dependencies, which may take a bit of time to download. These dependencies will all be downloaded for you automatically.
 
 For example, you'll be getting:
 
