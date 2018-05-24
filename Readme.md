@@ -10,6 +10,8 @@ To follow along with the presentation, take a look at the Jupyter notebooks in t
 
 If you just want to try out Julia itself, all you need to do is download a Julia binary from https://julialang.org/downloads/ and follow the [installation instructions](https://julialang.org/downloads/platform.html#windows).
 
+**Important**: we've tested everything with the basic command line version of Julia. Please do *not* use the JuliaPro distribution for this tutorial.
+
 Now you're ready to write Julia code and install other packages.
 
 ### Using Julia In Jupyter Notebooks
