@@ -4,13 +4,13 @@ BenchmarkTools 0.1
 Colors 0.8.2
 Conda 0.7.1
 IJulia 1.6.1
-Ipopt
-JuMP
-Measurements
-MeshCatMechanisms
-Plots
+Ipopt 0.3
+JuMP 0.16
+Measurements 0.5
+MeshCatMechanisms 0.0.5 0.1
+Plots 0.14
 PyCall 1.16
-RigidBodyDynamics 0.6.1
-RigidBodySim
-StaticArrays
-SymPy
+RigidBodyDynamics 0.6.1 0.7
+RigidBodySim 0.2 0.3
+StaticArrays 0.7
+SymPy 0.6
