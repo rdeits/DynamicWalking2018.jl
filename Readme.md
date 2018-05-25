@@ -4,6 +4,10 @@
 
 To follow along with the presentation, take a look at the Jupyter notebooks in the `notebooks` folder.
 
+## Getting Help
+
+For help with this tutorial, you can open a new issue here: <https://github.com/rdeits/DynamicWalking2018.jl/issues>. For general help with Julia usage, try the [Julia forum](https://discourse.julialang.org/) or the [Julia Slack chat group](https://slackinvite.julialang.org/)
+
 ## Quickstart
 
 ### Installing Julia
