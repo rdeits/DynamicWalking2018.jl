@@ -16,11 +16,9 @@ Now you're ready to write Julia code and install other packages.
 
 ### Using Julia In Jupyter Notebooks
 
-[Jupyter notebooks](http://jupyter.org/) are a great way to write interactive, descriptive code and to integrate code with data, graphs, and other results. Julia works great with Jupyter, and we'll run this tutorial inside a collection of notebooks.
+Jupyter notebooks are a great way to write interactive, descriptive code and to integrate code with data, graphs, and other results. Julia works great with Jupyter, and we'll run this tutorial inside a collection of notebooks.
 
-To use Julia inside a Jupyter notebook, you will also need to install the `IJulia` package.
-
-Start Julia, then run:
+To use Julia with Jupyter, you just need to install the `IJulia` package. To do that, just start Julia and run:
 
 ```julia
 Pkg.add("IJulia")
