@@ -14,3 +14,4 @@ RigidBodyDynamics 0.6.1 0.7
 RigidBodySim 0.2 0.3
 StaticArrays 0.7
 SymPy 0.6
+AtlasRobot
