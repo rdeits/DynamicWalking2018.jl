@@ -22,6 +22,7 @@ install:
 
 build_script:
   - echo "%JL_BUILD_SCRIPT%"
+  - set PYTHON=""
   - C:\julia\bin\julia -e "%JL_BUILD_SCRIPT%"
 
 test_script:
