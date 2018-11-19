@@ -12,7 +12,7 @@ end
     mktempdir() do outputdir
         jupyter = IJulia.jupyter
         for f in filter(x -> endswith(x, "ipynb"), readdir("../notebooks"))
-            if occursin("Julia is Fast", f) && !is_linux()
+            if occursin("Julia is Fast", f) && !Sys.islinux()
                 # Can't run the gcc demo on osx or windows
                 continue
             end
