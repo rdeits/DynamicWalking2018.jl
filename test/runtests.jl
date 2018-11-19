@@ -19,10 +19,12 @@ end
     for f in filter(x -> endswith(x, "ipynb"), readdir("../notebooks"))
         if contains(f, "Julia is Fast") && !is_linux()
             # Can't run the gcc demo on osx or windows
-            continue 
+            continue
         end
         notebook = joinpath("..", "notebooks", f)
         output = joinpath(outputdir, f)
-        @test begin run(`$jupyter nbconvert --to notebook --execute $notebook --output $output --ExecutePreprocessor.timeout=500`); true end
+        cd dirname(notebook) do
+            @test begin run(`$jupyter nbconvert --to notebook --execute $notebook --output $output --ExecutePreprocessor.timeout=500`); true end
+        end
     end
 end
