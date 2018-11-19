@@ -5,6 +5,7 @@ using Conda
 if Sys.iswindows()
     Conda.add("nbconvert") # jupyter doesn't seem to come with nbconvert on windows?
 end
+Conda.add("numpy")
 
 @testset "example notebooks" begin
     using IJulia
